@@ -72,13 +72,14 @@ header{
         }
         a{
           text-decoration: none;
-          button{
+          .header-book-btn{
             color: white;
             background-color: var(--main-dark-color);
             border: 1px solid var(--main-dark-color);
             font-size: 1rem;
+            font-family: "dachi";
             border-radius: 50px;
-            padding: 10px 40px;
+            padding: 12px 42px;
             cursor: pointer;
             transition: .4s;
             &:hover{
@@ -149,6 +150,7 @@ main{
       border: 1px solid var(--main-light-color);
       padding: 16px 56px;
       font-size: 18px;
+      font-family: "dachi";
       border-radius: 50px;
       font-weight: 400;
       transition: .3s;
@@ -259,14 +261,15 @@ main{
   .rating-card-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 335px;
-    gap: 15px;
+    grid-auto-rows: 340px;
+    gap: 16px;
     .rating-card{
       background-color: #FFF9AF;
       padding-top: 60px;
       padding-inline: 40px 50px;
-      @include flex-box($just: flex-start, $ali: flex-start, $dir: column, $gap: 13px);
+      @include flex-box($just: flex-start, $ali: flex-start, $dir: column, $gap: 8px);
       .stars{
+        margin-bottom: 5px;
         i{
           font-size: 1rem;
         }
@@ -274,11 +277,12 @@ main{
       .comment-header{
         font-weight: 400;
         font-size: 26px;
-        line-height: 34px;
+        line-height: 35px;
       }
       .comment-content{
         font-size: 1rem;
         line-height: 22px;
+        margin-bottom: 15px;
       }
       .author{
         font-size: 1rem;
@@ -288,3 +292,83 @@ main{
 }
 
 // section 3 start
+
+.section3{
+  min-height: 120vh;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #4C5B5C;
+  .section3-header{
+    font-size: 44px;
+    font-weight: 400;
+    margin-bottom: 18px;
+    text-align: center;
+    color: var(--main-light-color);
+  }
+  .section3-p{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 60px;
+    color: var(--main-light-color);
+  }
+  .services-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(300px, 36.5vw);
+    padding-inline: 100px;
+    gap: 24px;
+    margin-bottom: 40px;
+    .service-card{
+      position: relative;
+      overflow: hidden;
+      border-radius: 8px;
+      cursor: pointer;
+      &::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4));
+      }
+      &:hover img{
+        transform: scale(1.15);
+        transition: 2s ease-out;
+      }
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        transition: 2s ease-out;
+      }
+      .service-name{
+        position: absolute;
+        z-index: 2;
+        bottom: 32px;
+        left: 25px;
+        color: var(--main-light-color);
+        font-size: 26px;
+      } 
+    }
+  }
+  .all-services-button{
+    display: block;
+    margin-inline: auto;
+    color: #4C5B5C;
+    background-color: var(--main-light-color);
+    border: 1px solid var(--main-light-color);
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: "dachi";
+    padding: 17px 44px;
+    cursor: pointer;
+    transition: .4s;
+    &:hover{
+      color: var(--main-light-color);
+      background-color: #4C5B5C;
+      transition: .4s;
+    }
+  }
+}
