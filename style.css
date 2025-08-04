@@ -466,4 +466,18 @@ main {
 .section5 .service-images-container .animated-service-slides span {
   font-size: 18px;
   color: var(--main-dark-color);
+}
+
+.section6 {
+  min-height: 64.5vh;
+  padding-top: 125px;
+  background-image: linear-gradient(rgba(76, 91, 92, 0.5), rgba(76, 91, 92, 0.5)), url(./first-page-images/first-page-image6.avif);
+  background-size: cover;
+  background-position: center;
+}
+.section6 .section6-header {
+  font-size: 44px;
+  text-align: center;
+  font-weight: 400;
+  color: var(--main-light-color);
 }/*# sourceMappingURL=style.css.map */
