@@ -372,3 +372,43 @@ main{
     }
   }
 }
+
+//section 4 start
+
+.section4{
+  padding-top: 80px;
+  padding-bottom: 120px;
+  .s4-text-container{
+    width: 87%;
+    margin-inline: auto;
+    background-color: #FFF9AF;
+    padding: 50px 0 50px 0;
+    .section4-header{
+      font-size: 44px;
+      color: var(--main-dark-color);
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .text-grid-container{
+      display: grid;
+      grid-template-columns: repeat(5, 13%);
+      grid-auto-rows: minmax(30px, 1.8vw);
+      gap: 20px;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      img{
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}
+
+//section 5 start
+
+.section5{
+  
+}

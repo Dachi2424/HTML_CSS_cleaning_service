@@ -376,4 +376,38 @@ main {
   color: var(--main-light-color);
   background-color: #4C5B5C;
   transition: 0.4s;
+}
+
+.section4 {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.section4 .s4-text-container {
+  width: 87%;
+  margin-inline: auto;
+  background-color: #FFF9AF;
+  padding: 50px 0 50px 0;
+}
+.section4 .s4-text-container .section4-header {
+  font-size: 44px;
+  color: var(--main-dark-color);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.section4 .s4-text-container .text-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 13%);
+  grid-auto-rows: minmax(30px, 1.8vw);
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.section4 .s4-text-container .text-grid-container img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
 }/*# sourceMappingURL=style.css.map */
