@@ -532,6 +532,48 @@ main {
 }
 
 .section7 {
+  padding: 100px 120px 120px 120px;
   min-height: 105vh;
   background-color: #4C5B5C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0;
+}
+.section7 .section7-header {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 400px;
+}
+.section7 .section7-header h1 {
+  font-size: 44px;
+  font-weight: 400;
+  color: var(--main-light-color);
+  line-height: 52px;
+  width: 90%;
+}
+.section7 .section7-header p {
+  font-size: 18px;
+  color: var(--main-light-color);
+  line-height: 30px;
+}
+.section7 .section7-header .choose-plan-btn {
+  color: #4C5B5C;
+  background-color: var(--main-light-color);
+  border: 1px solid var(--main-light-color);
+  border-radius: 50px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: "dachi";
+  cursor: pointer;
+  width: 220px;
+  height: 54px;
+  transition: 0.4s;
+}
+.section7 .section7-header .choose-plan-btn:hover {
+  color: var(--main-light-color);
+  background-color: #4C5B5C;
+  transition: 0.4s;
 }/*# sourceMappingURL=style.css.map */
