@@ -846,6 +846,10 @@ footer .fourth-child a {
   .section4 .s4-text-container .text-grid-container {
     grid-template-columns: repeat(5, 15%);
   }
+  .section6 .section6-grid-container {
+    padding-inline: 100px;
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr 1fr 4fr;
+  }
   .section7 {
     padding: 100px 120px 120px 60px;
   }
@@ -869,6 +873,9 @@ footer .fourth-child a {
   }
 }
 @media screen and (max-width: 1100px) {
+  header nav .desktop-navigation {
+    gap: 50px;
+  }
   .section2 .rating-card-container {
     grid-auto-rows: 390px;
   }
