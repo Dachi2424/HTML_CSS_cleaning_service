@@ -529,16 +529,15 @@ main{
 //section 7 start
 
 .section7{
-  padding: 100px 120px 120px 120px;
+  padding: 100px 245px 120px 160px;
   min-height: 105vh;
   background-color: #4C5B5C;
   @include flex-box($just: space-between ,$ali: center);
   .section7-header{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 13px;
     width: 400px;
-
     h1{
       font-size: 44px;
       font-weight: 400;
@@ -570,4 +569,76 @@ main{
       }
     }
   }
+  .pay-card{
+    width: 410px;
+    .upper-side{
+      padding: 30px 35px 35px 35px;
+      background-color: #FFF9AF;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      position: relative;
+      .tag{
+        font-size: 14px;
+        color: var(--main-light-color);
+        background-color: var(--main-dark-color);
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        padding: 2px 7px;
+        transform: translateX(-50%);
+      }
+      .plan-text{
+        font-size: 20px;
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      .price{
+        font-size: 70px;
+        display: block;
+        text-align: center;
+        sup{
+          font-size: 24px;
+          margin-right: 5px;
+        }
+      }
+      .paying-frequency{
+        font-size: 12px;
+        display: block;
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .select-btn{
+        font-size: 1rem;
+        color: var(--main-light-color);
+        background-color: var(--main-dark-color);
+        font-family: "dachi";
+        border-radius: 80px;
+        border: 1px solid var(--main-light-color);
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+        transition: .2s;
+        &:hover{
+          color: var(--main-dark-color);
+          background-color: #FFF9AF;
+          transition: .2s;
+        }
+      }
+    }
+    .lower-side{
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding-top: 20px;
+      padding-bottom: 30px;
+      .im-benefit-text{
+        text-align: center;
+
+      }
+    }
+  }
 }
+
+//section 8 start
