@@ -144,4 +144,70 @@
     margin-bottom: 30px;
     transform: rotate(90deg) scaleX(2.2);
   }
+  .section7 {
+    padding-inline: 0;
+    min-height: 105dvh;
+    flex-direction: column;
+    gap: 100px;
+  }
+  .section7 .section7-header {
+    text-align: center;
+  }
+  .section7 .section7-header .choose-plan-btn {
+    display: block;
+    margin-inline: auto;
+    height: 44px;
+  }
+  .section8 {
+    min-height: 100dvh;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+  .section8 .s8-image-container {
+    width: 100%;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+  }
+  .section8 .s8-container .s8-grid-container {
+    grid-template-columns: 320px;
+  }
+  .section8 .s8-container .know-us-btn {
+    height: 44px;
+  }
+  .section9 {
+    height: 80dvh;
+  }
+  footer {
+    padding: 50px 20px;
+    min-height: 34dvh;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    justify-items: flex-start;
+  }
+  footer .first-child {
+    gap: 10px;
+  }
+  footer .first-child .footer-logo {
+    font-size: 18px;
+  }
+  footer .first-child .footer-logo img {
+    width: 16px;
+  }
+  footer .first-child .footer-btn-link {
+    margin-left: 0;
+  }
+  footer .first-child .footer-btn-link .footer-book-btn {
+    height: 44px;
+    width: 170px;
+    font-size: 15px;
+  }
+  footer .third-child {
+    grid-row: 2/3;
+  }
+  footer .fourth-child {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
 }/*# sourceMappingURL=tab-home.css.map */
