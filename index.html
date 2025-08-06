@@ -23,6 +23,19 @@
         <li><a href="">Log In <img src="./images/user.png" alt="user"></a></li>
         <li><a href=""><button class="header-book-btn">Book Now</button></a></li>
       </ul>
+      <i onclick=openBurgerMenu() class="fa-solid fa-bars"></i>
+      <ul class="mobile-navigation">
+        <div class="upper-side">
+          <a href=""><img src="./images/user.png" alt="user"> Log In</a>
+          <i onclick=closeBurgerMenu() class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="lower-side">
+          <li><a href="">Plans</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About</a></li>
+          <li><a href=""><button class="header-book-btn2">Book Now</button></a></li>
+        </div>
+      </ul>
     </nav>
   </header>
   <main>
@@ -326,6 +339,18 @@
   <div class="wix-link">
     <p>&#169; 2035 by The Cleanic. Powered and secured by <a href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route" target="_blank">Wix</a></p>
   </div>
+
+
+  <script>
+    function openBurgerMenu(){
+      const menu = document.querySelector('.mobile-navigation');
+      menu.style.display = 'unset';
+    }
+    function closeBurgerMenu(){
+      const menu = document.querySelector('.mobile-navigation');
+      menu.style.display = 'none';
+    }
+  </script>
 </body>
 
 </html>
