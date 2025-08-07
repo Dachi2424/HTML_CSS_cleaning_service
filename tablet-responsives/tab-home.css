@@ -258,6 +258,10 @@
   .mobile-section1 form .input-grid-container {
     grid-template-columns: 1fr 1fr;
   }
+  .mobile-section1 form .input-grid-container .grid-child4 .content {
+    width: 100%;
+    left: 0;
+  }
   .mobile-section1 form .input-grid-container .grid-child7 {
     grid-column: 1/span 2;
   }

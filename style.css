@@ -353,6 +353,7 @@ main {
   transform: rotate(90deg) scaleY(2);
   font-size: 0.7rem;
   cursor: pointer;
+  transition: 0.15s linear;
 }
 .mobile-section1 form .input-grid-container .grid-child4 .select-button #phone {
   padding-inline: 0;
@@ -365,6 +366,7 @@ main {
   background-color: #FFF9AF;
   top: 83px;
   border: 1px solid rgba(10, 35, 35, 0.568627451);
+  box-shadow: 0 0 5px 1px rgba(10, 35, 35, 0.3098039216);
   display: none;
   flex-direction: column;
 }
@@ -385,8 +387,19 @@ main {
 .mobile-section1 form .input-grid-container .grid-child4 .content .countries {
   width: 100%;
   list-style: none;
-  max-height: 200px;
+  max-height: 190px;
   overflow-y: auto;
+}
+.mobile-section1 form .input-grid-container .grid-child4 .content .countries::-webkit-scrollbar {
+  width: 8px;
+}
+.mobile-section1 form .input-grid-container .grid-child4 .content .countries::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: #dad495;
+}
+.mobile-section1 form .input-grid-container .grid-child4 .content .countries::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #a8a473;
 }
 .mobile-section1 form .input-grid-container .grid-child4 .content .countries li {
   width: 100%;
@@ -395,6 +408,13 @@ main {
 }
 .mobile-section1 form .input-grid-container .grid-child4 .content .countries li:hover {
   background-color: #f3eca4;
+}
+.mobile-section1 form .input-grid-container .grid-child4.active .select-button .earth-div .angle-down {
+  transform: rotate(-90deg) scaleY(2);
+  transition: 0.15s linear;
+}
+.mobile-section1 form .input-grid-container .grid-child4.active .content {
+  display: flex;
 }
 .mobile-section1 form .input-grid-container .grid-child8 {
   grid-column: 2/span 2;

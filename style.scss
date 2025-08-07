@@ -340,6 +340,7 @@ main{
               transform: rotate(90deg) scaleY(2);
               font-size: 0.7rem;
               cursor: pointer;
+              transition: .15s linear;
             }
           }
           #phone{
@@ -354,6 +355,7 @@ main{
           background-color: #FFF9AF;
           top: 83px;
           border: 1px solid #0a232391;
+          box-shadow: 0 0 5px 1px #0a23234f;
           display: none;
           flex-direction: column;
           .content-searchbar{
@@ -373,8 +375,19 @@ main{
           .countries{
             width: 100%;
             list-style: none;
-            max-height: 200px;
+            max-height: 190px;
             overflow-y: auto;
+            &::-webkit-scrollbar{
+              width: 8px;
+            }
+            &::-webkit-scrollbar-track{
+              border-radius: 5px;
+              background-color: #dad495;
+            }
+            &::-webkit-scrollbar-thumb{
+              border-radius: 5px;
+              background-color: #a8a473;
+            }
             li{
               width: 100%;
               padding: 12px;
@@ -385,6 +398,19 @@ main{
             }
           }
         }
+      }
+      .grid-child4.active{
+        .select-button{
+          .earth-div{
+            .angle-down{
+              transform: rotate(-90deg) scaleY(2);
+              transition: .15s linear;
+            }
+          }
+        }
+      }
+      .grid-child4.active .content{
+        display: flex;
       }
       .grid-child8{
         grid-column: 2 / span 2;
