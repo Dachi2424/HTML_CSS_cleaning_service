@@ -93,6 +93,9 @@ header{
           }
         }
       }
+      li:nth-child(1) a{
+        text-decoration: underline;
+      }
       li:nth-child(4){
         &:hover{
           text-decoration: none;
@@ -202,6 +205,45 @@ header{
 main{
   animation: opacityChanger 1.5s forwards;
 }
+
+
+
+
+.section1{
+  padding-top: 202px;
+  padding-bottom: 100px;
+  .s1-header{
+    font-size: 56px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .s1-heading{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .paycard-container{
+    width: 100%;
+    @include flex-box($gap: 20px);
+    .pay-card{
+      width: 410px;
+      border: 1px solid var(--main-dark-color);
+      .upper-side{
+        .plan-type{
+          font-size: 20px;
+        }
+        .price{
+          font-size: 44px;
+          sup{
+            font-size: 18px;
+          } 
+        }
+      }
+    }
+  }
+}
+
 
 
 
