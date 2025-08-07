@@ -226,6 +226,7 @@ main{
   .paycard-container{
     width: 100%;
     @include flex-box($gap: 32px);
+    flex-wrap: wrap;
     .pay-card{
       text-align: center;
       border-radius: 10px;
@@ -233,7 +234,7 @@ main{
       border: 1px solid var(--main-dark-color);
       .upper-side{
         border-bottom: 1px solid var(--main-dark-color);
-        padding: 30px 30px 24px;
+        padding: 28px 30px 24px;
         position: relative;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;

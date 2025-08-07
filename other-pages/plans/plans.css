@@ -236,6 +236,7 @@ main {
   align-items: center;
   flex-direction: row;
   gap: 32px;
+  flex-wrap: wrap;
 }
 .section1 .paycard-container .pay-card {
   text-align: center;
@@ -245,7 +246,7 @@ main {
 }
 .section1 .paycard-container .pay-card .upper-side {
   border-bottom: 1px solid var(--main-dark-color);
-  padding: 30px 30px 24px;
+  padding: 28px 30px 24px;
   position: relative;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;

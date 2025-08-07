@@ -1,0 +1,78 @@
+@media screen and (max-width: 426px) {
+  header {
+    height: 80px;
+  }
+  header nav .mobile-navigation .upper-side {
+    height: 80px;
+  }
+  .floating-scroll {
+    width: 50px;
+    height: 50px;
+  }
+  .floating-scroll .fa-angle-up {
+    font-size: 1.6rem;
+  }
+  footer {
+    padding: 50px 30px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: flex-start;
+    row-gap: 50px;
+  }
+  footer .first-child {
+    gap: 15px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  footer .first-child .footer-logo {
+    align-self: flex-start;
+  }
+  footer .second-child {
+    font-size: 14px;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  footer .second-child span {
+    margin-bottom: 18px;
+  }
+  footer .second-child a {
+    margin-bottom: 10px;
+  }
+  footer .third-child {
+    font-size: 14px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  footer .third-child span {
+    margin-bottom: 8px;
+  }
+  footer .third-child .span2 {
+    margin-bottom: 18px;
+  }
+  footer .third-child .span3 {
+    margin-bottom: 18px;
+  }
+  footer .third-child .social-media-logos {
+    margin-top: 25px;
+    gap: 22px;
+  }
+  footer .fourth-child {
+    font-size: 14px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  footer .fourth-child span {
+    margin-bottom: 8px;
+  }
+  footer .fourth-child .span4 {
+    margin-bottom: 18px;
+  }
+  .wix-link {
+    height: 80px;
+  }
+  .wix-link p {
+    text-align: center;
+    width: 80%;
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=mob-plans.css.map */
