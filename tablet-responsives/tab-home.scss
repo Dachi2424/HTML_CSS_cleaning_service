@@ -420,4 +420,34 @@
       }
     }
   }
+
+  .section8{
+    .s8-container{
+      .section8-header{
+        font-size: 24px;
+      }
+      .s8-grid-container{
+        gap: 25px;
+        margin-bottom: 20px;
+        .s8-grid-card{
+          gap: 6px;
+          .card-content{
+            h1{
+              font-size: 18px;
+              margin-bottom: 5px;
+            }
+            p{
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer{
+    .second-child{
+      align-self: center;
+    }
+  }
 }
