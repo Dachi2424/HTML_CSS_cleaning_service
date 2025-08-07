@@ -290,6 +290,7 @@ main{
           padding-inline: 12px;
           height: 40px;
           border: 1px solid black;
+          font-family: "dachi";
         }
         select{
           width: 100%;
@@ -300,6 +301,35 @@ main{
           padding-inline: 12px;
           height: 40px;
           border: 1px solid black;
+          font-family: "dachi";
+        }
+      }
+      .grid-child4{
+        .select-button{
+          position: relative;
+          width: 100%;
+          border-radius: 6px;
+          padding-inline: 56px 12px;
+          height: 40px;
+          border: 1px solid black;
+          display: flex;
+          .fa-earth-americas{
+            position: absolute;
+            left: 12px;
+            font-size: 1.1rem;
+            cursor: pointer;
+          }
+          .angle-down{
+            position: absolute;
+            left: 42px;
+            transform: rotate(90deg) scaleY(1.8);
+            font-size: 0.7rem;
+            cursor: pointer;
+          }
+          #phone{
+            padding-inline: 0;
+            border: none;
+          }
         }
       }
       .grid-child8{

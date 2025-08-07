@@ -301,6 +301,7 @@ main {
   padding-inline: 12px;
   height: 40px;
   border: 1px solid black;
+  font-family: "dachi";
 }
 .mobile-section1 form .input-grid-container div select {
   width: 100%;
@@ -311,6 +312,33 @@ main {
   padding-inline: 12px;
   height: 40px;
   border: 1px solid black;
+  font-family: "dachi";
+}
+.mobile-section1 form .input-grid-container .grid-child4 .select-button {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  padding-inline: 56px 12px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+}
+.mobile-section1 form .input-grid-container .grid-child4 .select-button .fa-earth-americas {
+  position: absolute;
+  left: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.mobile-section1 form .input-grid-container .grid-child4 .select-button .angle-down {
+  position: absolute;
+  left: 42px;
+  transform: rotate(90deg) scaleY(1.8);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+.mobile-section1 form .input-grid-container .grid-child4 .select-button #phone {
+  padding-inline: 0;
+  border: none;
 }
 .mobile-section1 form .input-grid-container .grid-child8 {
   grid-column: 2/span 2;
