@@ -179,7 +179,7 @@ header nav .mobile-navigation .lower-side a .header-book-btn2 {
 
 .floating-scroll {
   position: fixed;
-  bottom: 20px;
+  bottom: 50px;
   right: 20px;
   border-radius: 50%;
   border: 2px solid var(--main-dark-color);

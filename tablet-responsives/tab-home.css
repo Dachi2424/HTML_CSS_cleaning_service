@@ -31,7 +31,7 @@
     animation: none;
   }
   .section1 {
-    height: 128dvh;
+    height: 128svh;
     padding-top: 100px;
     padding-inline: 0;
   }
@@ -45,7 +45,7 @@
     width: 90%;
   }
   .section2 {
-    min-height: 85dvh;
+    min-height: 85svh;
     padding-top: 80px;
     padding-inline: 20px;
   }
@@ -74,7 +74,7 @@
     font-size: 14px;
   }
   .section3 {
-    min-height: 120dvh;
+    min-height: 120svh;
   }
   .section3 .services-container {
     grid-template-columns: 1fr;
@@ -114,7 +114,7 @@
     grid-column: 4/span 2;
   }
   .section5 {
-    min-height: 100dvh;
+    min-height: 100svh;
     padding-bottom: 50px;
     padding-inline: 50px;
   }
@@ -136,7 +136,7 @@
     grid-row: 4/5;
   }
   .section6 {
-    min-height: 64.5dvh;
+    min-height: 64.5svh;
   }
   .section6 .section6-grid-container {
     padding-inline: 0;
@@ -150,7 +150,7 @@
   }
   .section7 {
     padding-inline: 0;
-    min-height: 105dvh;
+    min-height: 105svh;
     flex-direction: column;
     gap: 100px;
   }
@@ -164,7 +164,7 @@
     height: 44px;
   }
   .section8 {
-    min-height: 100dvh;
+    min-height: 100svh;
     flex-direction: column;
     padding: 0;
     padding-bottom: 50px;
@@ -182,11 +182,11 @@
     height: 44px;
   }
   .section9 {
-    height: 80dvh;
+    height: 80svh;
   }
   footer {
     padding: 50px 20px;
-    min-height: 34dvh;
+    min-height: 34svh;
     grid-template-columns: 1fr 1fr;
     row-gap: 30px;
     justify-items: flex-start;
@@ -237,7 +237,7 @@
     font-size: 2rem;
   }
   .section1 {
-    height: calc(100dvh - 92px);
+    height: calc(100svh - 92px);
   }
   .section1 .banner-text {
     width: 300px;
