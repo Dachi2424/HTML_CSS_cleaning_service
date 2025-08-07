@@ -71,11 +71,30 @@
           <div class="grid-child4">
             <label for="phone">Phone number *</label>
             <div class="select-button">
-              <i class="fa-solid fa-earth-americas"></i>
-              <span class="angle-down">&gt</span>
+              <div class="earth-div">
+                <i class="fa-solid fa-earth-americas"></i>
+                <span class="angle-down">&gt</span>
+              </div>
               <input type="tel" id="phone">
             </div>
-            
+            <div class="content">
+              <div class="content-searchbar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+              </div>
+              <ul class="countries">
+                <li>Afganistan +93</li>
+                <li>Aland Islands +358</li>
+                <li>Albania +355</li>
+                <li>Algeria +213</li>
+                <li>American Samoa +1684</li>
+                <li>Andorra +376</li>
+                <li>Angola +244</li>
+                <li>Anguilla +1</li>
+                <li>Antigua and Barbuda +1</li>
+                <li>Argentina +54</li>
+              </ul>
+            </div>
           </div>
           <div class="grid-child5">
             <label for="address">Address *</label>
@@ -243,11 +262,12 @@
     <section class="section7">
       <div class="section7-header">
         <h1>Our Plans & Special Discounts</h1>
-        <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. I'm a paragraph. Click here to add your own text and edit me. It's easy.</p>
+        <p>I'm a paragraph. Click here to add your own text and edit me. It's easy. I'm a paragraph. Click here to add
+          your own text and edit me. It's easy.</p>
         <button class="choose-plan-btn">Choose Your Plan</button>
       </div>
       <div class="pay-card">
-        <div class="upper-side"> 
+        <div class="upper-side">
           <span class="tag">Best Value</span>
           <span class="plan-text">The Bi-Monthly Plan</span>
           <Span class="price"><sup>$</sup>280</Span>
@@ -338,25 +358,26 @@
       </div>
     </div>
     <div class="fourth-child">
-        <span class="span4">Contact</span>
-        <span>The cleanic</span>
-        <span>500 Terry Francine Street</span>
-        <span>San Francisco, CA 94158</span>
-        <span>123-456-7890</span>
-        <a href="">info@mysite.com</a>
-      </div>
+      <span class="span4">Contact</span>
+      <span>The cleanic</span>
+      <span>500 Terry Francine Street</span>
+      <span>San Francisco, CA 94158</span>
+      <span>123-456-7890</span>
+      <a href="">info@mysite.com</a>
+    </div>
   </footer>
   <div class="wix-link">
-    <p>&#169; 2035 by The Cleanic. Powered and secured by <a href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route" target="_blank">Wix</a></p>
+    <p>&#169; 2035 by The Cleanic. Powered and secured by <a
+        href="https://manage.wix.com/account/websites?referralAdditionalInfo=Route" target="_blank">Wix</a></p>
   </div>
 
 
   <script>
-    function openBurgerMenu(){
+    function openBurgerMenu() {
       const menu = document.querySelector('.mobile-navigation');
       menu.style.display = 'unset';
     }
-    function closeBurgerMenu(){
+    function closeBurgerMenu() {
       const menu = document.querySelector('.mobile-navigation');
       menu.style.display = 'none';
     }

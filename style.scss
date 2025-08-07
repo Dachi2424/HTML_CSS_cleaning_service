@@ -305,6 +305,7 @@ main{
         }
       }
       .grid-child4{
+        position: relative;
         .select-button{
           position: relative;
           width: 100%;
@@ -313,22 +314,75 @@ main{
           height: 40px;
           border: 1px solid black;
           display: flex;
-          .fa-earth-americas{
+          .earth-div{
             position: absolute;
-            left: 12px;
-            font-size: 1.1rem;
+            left: 5px;
+            border-radius: 6px;
+            height: 80%;
+            width: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 9px;
             cursor: pointer;
-          }
-          .angle-down{
-            position: absolute;
-            left: 42px;
-            transform: rotate(90deg) scaleY(1.8);
-            font-size: 0.7rem;
-            cursor: pointer;
+            &:hover .fa-earth-americas{
+              color: rgb(150, 150, 150);
+            }
+            &:hover .angle-down{
+              color: rgb(150, 150, 150);
+            }
+            .fa-earth-americas{
+              font-size: 1.1rem;
+              cursor: pointer;
+            }
+            .angle-down{
+              transform: rotate(90deg) scaleY(2);
+              font-size: 0.7rem;
+              cursor: pointer;
+            }
           }
           #phone{
             padding-inline: 0;
             border: none;
+          }
+        }
+        .content{
+          width: 150%;
+          position: absolute;
+          z-index: 10;
+          background-color: #FFF9AF;
+          top: 83px;
+          border: 1px solid #0a232391;
+          display: none;
+          flex-direction: column;
+          .content-searchbar{
+            position: relative;
+            width: 86%;
+            align-self: center;
+            margin-top: 20px;
+            .fa-magnifying-glass{
+              position: absolute;
+              left: 12px;
+              cursor: pointer;
+            }
+            input{
+              padding-left: 40px;
+            }
+          }
+          .countries{
+            width: 100%;
+            list-style: none;
+            max-height: 200px;
+            overflow-y: auto;
+            li{
+              width: 100%;
+              padding: 12px;
+              cursor: pointer;
+              &:hover{
+                background-color: #f3eca4;
+              }
+            }
           }
         }
       }
