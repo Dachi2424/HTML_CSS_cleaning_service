@@ -24,6 +24,9 @@
   header nav .desktop-navigation li:nth-child(4) a img {
     width: 28px;
   }
+  .floating-scroll {
+    display: flex;
+  }
   main {
     animation: none;
   }
@@ -225,6 +228,13 @@
   }
   header nav .fa-bars {
     display: unset;
+  }
+  .floating-scroll {
+    width: 60px;
+    height: 60px;
+  }
+  .floating-scroll .fa-angle-up {
+    font-size: 2rem;
   }
   .section1 {
     height: calc(100dvh - 92px);

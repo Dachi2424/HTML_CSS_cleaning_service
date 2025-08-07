@@ -35,6 +35,10 @@
     }
   }
 
+  .floating-scroll{
+    display: flex;
+  }
+
   main{
     animation: none;
   }
@@ -263,6 +267,14 @@
       .fa-bars{
         display: unset;
       }
+    }
+  }
+
+  .floating-scroll{
+    width: 60px;
+    height: 60px;
+    .fa-angle-up{
+      font-size: 2rem;
     }
   }
 
