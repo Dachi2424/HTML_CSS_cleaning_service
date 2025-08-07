@@ -225,20 +225,67 @@ main{
   }
   .paycard-container{
     width: 100%;
-    @include flex-box($gap: 20px);
+    @include flex-box($gap: 32px);
     .pay-card{
-      width: 410px;
+      text-align: center;
+      border-radius: 10px;
+      width: 408px;
       border: 1px solid var(--main-dark-color);
       .upper-side{
+        border-bottom: 1px solid var(--main-dark-color);
+        padding: 30px 30px 24px;
+        position: relative;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        .tag{
+          font-size: 14px;
+          background-color: var(--main-dark-color);
+          color: var(--main-light-color);
+          padding: 7px 10px 8px;
+          position: absolute;
+          top: -16px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
         .plan-type{
           font-size: 20px;
+          margin-bottom: 20px;
         }
         .price{
           font-size: 44px;
+          margin-bottom: 5px;
           sup{
             font-size: 18px;
           } 
         }
+        .every-month-text{
+          font-size: 12px;
+          margin-bottom: 48px;
+        }
+        .select-btn{
+          font-size: 18px;
+          color: var(--main-light-color);
+          background-color: var(--main-dark-color);
+          border: 1px solid var(--main-dark-color);
+          border-radius: 100px;
+          font-family: "dachi";
+          width: 260px;
+          height: 58px;
+          cursor: pointer;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      .lower-side{
+        padding: 15px 0;
+        p{
+          font-size: 14px;
+          padding: 13px 0;
+        }
+      }
+      &:nth-child(2) .upper-side{
+        background-color: #FFF9AF;
       }
     }
   }
