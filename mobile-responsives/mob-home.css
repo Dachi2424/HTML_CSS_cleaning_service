@@ -22,8 +22,24 @@
   .section1 .banner-text p {
     line-height: 22px;
   }
+  .mobile-section1 .dark-background {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
   .mobile-section1 form .input-grid-container {
     grid-template-columns: 1fr;
+  }
+  .mobile-section1 form .input-grid-container .grid-child4 .content {
+    position: fixed;
+    top: unset;
+    bottom: 0;
+    left: 0;
+    z-index: 998;
+    width: 100%;
+    right: 0;
+    padding-bottom: 10px;
+  }
+  .mobile-section1 form .input-grid-container .grid-child4 .content .countries li {
+    padding: 12px 30px;
   }
   .mobile-section1 form .input-grid-container .grid-child7 {
     grid-column: 1/2;

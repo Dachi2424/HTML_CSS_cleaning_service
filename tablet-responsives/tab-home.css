@@ -44,6 +44,9 @@
     margin: 20px auto;
     width: 90%;
   }
+  .mobile-section1 form .input-grid-container .grid-child4 .content .countries::-webkit-scrollbar {
+    display: none;
+  }
   .section2 {
     min-height: 85svh;
     padding-top: 80px;

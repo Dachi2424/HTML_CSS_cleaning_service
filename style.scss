@@ -43,7 +43,7 @@ header{
   top: 40px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 1001;
   padding-inline: 35px 30px;
   @include flex-box($just: space-between);
   a{
@@ -186,7 +186,7 @@ header{
   justify-content: center;
   text-decoration: none;
   color: var(--main-dark-color);
-  z-index: 998;
+  z-index: 995;
   .fa-angle-up{
     font-size: 2.2rem;
     transform: scaleX(1.1);
@@ -251,6 +251,16 @@ main{
 //here starts mobile-section1
 
 .mobile-section1{
+  .dark-background{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    display: none;
+  }
   form{
     margin: -352px 100px 0 auto;
     padding: 30px 25px 0 25px;

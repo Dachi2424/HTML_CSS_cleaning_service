@@ -59,6 +59,17 @@
     form{
       margin: 20px auto;
       width: 90%;
+      .input-grid-container{
+        .grid-child4{
+          .content{
+            .countries{
+              &::-webkit-scrollbar{
+                display: none;
+              }
+            }
+          }
+        }
+      }
     }
   }
 
