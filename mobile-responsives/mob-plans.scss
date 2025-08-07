@@ -20,6 +20,37 @@
     }
   }
 
+
+  .section1{
+    padding-top: 90px;
+    padding-bottom: 50px;
+    .s1-header{
+      font-size: 44px;
+      margin-bottom: 12px;
+    }
+    .s1-heading{
+      font-size: 18px;
+      margin-bottom: 50px;
+    }
+    .paycard-container{
+      .pay-card{
+        width: 94%;
+        .upper-side{
+          padding-inline: 0px;
+          .every-month-text{
+            margin-bottom: 30px;
+          }
+          .select-btn{
+            width: 220px;
+            height: 48px;
+            font-size: 17px;
+          }
+        }
+      }
+    }
+  }
+
+
   footer{
     padding: 50px 30px;
     grid-template-columns: 1fr;
